@@ -3,7 +3,6 @@
 # Save the result in the database and show statistics.
 
 import random
-import pandas as pd
 
 count1 = count2 = count3 = count4 = count5 = count6 = 0
 total_roll = 0
@@ -61,18 +60,13 @@ while x == "yes":
     x=input("Do you want to roll again? : ")
     print("\n")
 
-data = {
-    'Total roll': [total_roll],
-    '1': [count1],
-    '2': [count2],
-    '3': [count3],
-    '4': [count4],
-    '5': [count5],
-    '6': [count6]
-}
-
-df = pd.DataFrame(data)
-
-y = input("Do you want to know your statistics?")
+y = input("Do you want to know your statistics? (yes/no): ")
 if y.lower() == "yes":
-    print(df)
+    print("\nSTATISTICS")
+    print("Total rolls:", total_roll)
+    print("1:", count1)
+    print("2:", count2)
+    print("3:", count3)
+    print("4:", count4)
+    print("5:", count5)
+    print("6:", count6)
