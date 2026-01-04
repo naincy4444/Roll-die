@@ -1,6 +1,5 @@
 #Hangman – Classic word-guessing game with limited attempts.
 
-
 import random
 
 name = input("What is your name? ")
@@ -16,7 +15,7 @@ word = random.choice(words)
 print("Guess the characters")
 
 guesses = ''
-turns = 12
+turns = 10
 
 while turns > 0:
 
